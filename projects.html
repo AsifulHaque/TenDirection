@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 DIRECTIONS ARCHITECTS</title>
+    <link rel="stylesheet" href="projects_style.css">
+    <link rel="shortcut icon" href="images/logo_transparent.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo_text_transparent.png" alt="10Direction"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Project Gallary</h1>
+            <p>Add Some suitable catchy phrase here. The title text above can also be changed.<br>Also this section can be completely removed if needed and replaced with auto scrolling images.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="projects.html" class="hero-btn">View Projects</a>
+        </div>
+    </section>
+
+    <!-------Call to Action------>
+    <section class="cta">
+        <h1>Interested to talk?<br>Consider booking an apointment.</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-------Footer------>
+    <section class="footer">
+        <p>Copyright © (2017 - 2024) 10 Direction Architecture Studio®. All rights reserved.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=61553250603725" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Website created by <a href="https://www.facebook.com/asiful.haque.66/" target="_blank">Asif_hq</a></p>
+    </section>
+    <!----------JavaScript for Toggle Menu---------->
+    <script>
+        var navLinks = document.getElementById('navLinks');
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
