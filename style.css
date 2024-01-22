@@ -56,7 +56,7 @@ nav img{
 .nav-links ul li a{
     color: var(--primary_color);
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
 }
 .text-box{
     width: 90%;
