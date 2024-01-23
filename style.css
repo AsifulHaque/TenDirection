@@ -408,10 +408,46 @@ h3{
 }
 /*-------------------About page-----------------*/
 .location{
-    width: 80%;
+    width: 85%;
     margin: auto;
     padding: 80px 0;
 }
 .location iframe{
     width: 100%;
+}
+.address{
+    width: 85%;
+    margin: auto;
+}
+.address-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.address-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.address-col div .fa{
+    font-size: 28px;
+    color: var(--highlight_color);
+    margin: 10px;
+    margin-right: 20px;
+}
+.address-col div p{
+    padding: 0;
+}
+.address-col div h5{
+    font-size: 20px;
+    margin-bottom: 4px;
+    color: var(--dark_color);
+    font-weight: 400;
+}
+.address-col input, .address-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
