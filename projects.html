@@ -29,7 +29,7 @@
         <h1>Project Gallary</h1>
     </section>
     <!------- Projects Grid ------>
-    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer","percentPosition": true}'>
+    <div class="grid">
         <div class="grid-sizer"></div>
         <div class="grid-item"><img src="images/1_1.png" alt=""><h3>Project 1</h3></div>
         <div class="grid-item"><img src="images/2_1.png" alt=""><h3>Project 2</h3></div>
@@ -78,5 +78,19 @@
     </script>
     <!---------- Masonry pkg ---------->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!---------- ImagesLoaded pkg ---------->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!---------- Refresh Masonry Layout after each image load ---------->
+    <script>
+        var msnry = new Masonry( document.querySelector('.grid'), {
+            itemSelector: ".grid-item",
+            columnWidth: ".grid-sizer",
+            percentPosition: true});
+        imagesLoaded( document.querySelector('.grid')).on( 'progress', function( instance, image ) {
+            var result = image.isLoaded ? 'loaded' : 'broken';
+            console.log( image.img.src.split("/").pop() + ' is ' + result );
+            msnry.layout();
+            });
+    </script>
 </body>
 </html>

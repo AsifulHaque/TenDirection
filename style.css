@@ -396,9 +396,10 @@ h3{
     color: var(--primary_color);
     font-size: 22px;
     bottom: 5px;
-    left: 10px;
+    left: 20px;
     position: absolute;
     text-shadow: 2px 2px 4px #000000;
+    text-align: start;
 }
 @media(width < 800px){
     .grid-sizer,
